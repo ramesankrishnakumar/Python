@@ -10,3 +10,8 @@ References:
 + [FastAPI](https://www.youtube.com/watch?v=iWS9ogMPOI0)
 + [ASGI vs WSGI](https://www.youtube.com/watch?v=vKjCkeJGbNk)
 
+
+### Concepts
+[ClassMethod vs StaticMethod ](https://stackoverflow.com/a/12179752)
+
+

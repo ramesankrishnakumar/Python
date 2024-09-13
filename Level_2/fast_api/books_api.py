@@ -14,7 +14,7 @@ books = [
 # run instructions
 """ 
 poetry shell
-uvicorn --reload 1_fast_api.books:app 
+uvicorn --reload fast_api.books_api:app 
 """
 
 
@@ -38,8 +38,7 @@ async def search_book(book_title: str, category: str = None):
             if book["title"].casefold() == book_title.casefold():
                 matched_books.append(book)
         else:
-            if (book["title"].casefold() == book_title.casefold() and
-                book["category"].casefold()):
+            if book["title"].casefold() == book_title.casefold() and book["category"].casefold() == category.casefold():
                 matched_books.append(book)
 
     return matched_books
@@ -52,3 +51,21 @@ async def create_book(book = Body() ) -> dict:
     books.append(book)
     new_book_id += 1
     return book
+
+@app.put("/books/{book_id}")
+async def update_book(book_id: int, updated_book = Body()) -> dict:
+    for book in books:
+        if book["id"] == book_id:
+            book["title"] = updated_book["title"]
+            book["author"] = updated_book["author"]
+            book["category"] = updated_book["category"]
+            return book
+    return {}
+
+@app.delete("/books/{book_id}")
+async def delete_book(book_id: int) -> bool:
+    for book in books:
+        if book["id"] == book_id:
+            books.remove(book)
+            return True
+    return False

@@ -9,6 +9,11 @@ References:
 4. [Poetry](https://www.youtube.com/watch?v=XIdQ6gO3Anc)
 5. [FastAPI](https://www.youtube.com/watch?v=iWS9ogMPOI0)
 6. [ASGI vs WSGI](https://www.youtube.com/watch?v=vKjCkeJGbNk)
+7. [if `__name__ == "__main__"`](https://www.youtube.com/watch?v=NB5LGzmSiCs)
+8. [lambda](https://www.youtube.com/watch?v=HQNiSfb795A)
+9. [decorators](https://www.youtube.com/watch?v=QH5fw9kxDQA)
+10. [decorators - code](https://github.com/ArjanCodes/2023-decorator)
+
 
 
 ### Concepts

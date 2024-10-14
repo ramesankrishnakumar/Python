@@ -11,6 +11,9 @@ pandas = "^2.2.2"
 numpy = "^2.1.1"
 fastapi = {extras = ["standard"], version = "^0.114.0"}
 uvicorn = {extras = ["standard"], version = "^0.30.6"}
+jupyterlab = "^4.2.5"
+python-dateutil = "^2.9.0.post0"
+email-validator = "^2.2.0"
 
 
 [build-system]

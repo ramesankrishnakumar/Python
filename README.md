@@ -18,5 +18,6 @@ References:
 
 ### Concepts
 1. [ClassMethod vs StaticMethod ](https://stackoverflow.com/a/12179752)
+2. [print,sep,end](https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/)
 
 
